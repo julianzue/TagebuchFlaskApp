@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background: #222;
+}
+
+header{
+    padding: 20px;
+    background: #555;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+}
+
+.form-search{
+    display: flex;
+}
+
+.form-search .query{
+    border: none;
+    padding: 2px 10px;
+    outline: none;
+    width: 200px;
+}
+
+.form-search .submit{
+    background: white;
+    padding: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.new{
+    padding: 5px 10px;
+    background: lime;
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    margin: auto;
+    max-width: 900px;
+}
+
+article{
+    margin: 20px;
+    background: white;
+    overflow: hidden;
+}
+
+article .head{
+    background: #555;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article .body{
+    padding: 20px;
+}
+
+.back{
+    padding: 5px 10px;
+    background: rgb(195, 0, 0);
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-new{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-new .title{
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.form-new .content{
+    padding: 10px;
+    border: 1px solid #555;
+    resize: none;
+    height: 200px;
+}
+
+.form-new .add{
+    padding: 10px;
+    background: limegreen;
+    border: none;
+}
+
+.search-info{
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-info a{
+    color: limegreen;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-search{
+        width: 100%;
+    }
+
+    .form-search .query{
+        width: 100%;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    article .head{
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+}

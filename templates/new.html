@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neu | Tagebuch</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <p>Tagebuch</p>
+        <div class="right">
+            <form method="post" class="form-search">
+                <input type="search" name="query" class="query" placeholder="Suchen">
+                <button type="submit" class="submit">
+                    <img src="/static/img/search_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </button>
+            </form>
+            <a href="/" class="back">
+                <img src="/static/img/close_24dp_555_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <article>
+            <div class="head">
+                <p>Neu</p>
+            </div>
+            <div class="body">
+                <form method="post" class="form-new">
+                    <input type="text" name="title" class="title" placeholder="Überschrift">
+                    <textarea name="content" class="content" placeholder="Inhalt"></textarea>
+                    <input type="submit" value="Hinzufügen" class="add" name="add">
+                </form>
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>

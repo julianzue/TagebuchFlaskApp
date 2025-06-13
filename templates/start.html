@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start | Tagebuch</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <p>Tagebuch</p>
+        <div class="right">
+            <form method="post" class="form-search">
+                <input type="search" name="query" class="query" placeholder="Suchen">
+                <button type="submit" class="submit" name="search">
+                    <img src="/static/img/search_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </button>
+            </form>
+            <a href="/neu" class="new">
+                <img src="/static/img/add_24dp_555_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <section>
+        {% for item in content %}
+            <article>
+                <div class="head">
+                    <p>{{ item.title }}</p>
+                    <p>{{ item.date.replace(" ", " • ") }}</p>
+                </div>
+                <div class="body">
+                    {% for line in item.content %}
+                        <p>{{ line }}</p>
+                    {% endfor %}
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+    
+</body>
+</html>
